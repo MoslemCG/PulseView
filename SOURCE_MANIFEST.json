@@ -14,7 +14,9 @@
     "nativeWindowsScope": "Existing executable observed and limited GPU/split UI interaction; full native acceptance pending.",
     "nativeUiObserved": true,
     "nativeWindowsAcceptancePassed": false,
-    "nativeCppTests": 2
+    "nativeCppTests": 2,
+    "installerSmokePassed": true,
+    "installerSmokeRun": "https://github.com/MoslemCG/PulseView/actions/runs/39831019559"
   },
   "manifestScope": "Reviewed staged Git files, excluding this manifest itself. Local references, credentials, runtime state, build output, dependencies and caches excluded. Hashes describe staged Git blob bytes.",
   "files": [
@@ -80,8 +82,8 @@
     },
     {
       "path": "README.fa.md",
-      "bytes": 17936,
-      "sha256": "6b20dd4f23181a5bc441b950e02b0d654bc717cf037170f59c8d80446cc489ac"
+      "bytes": 17837,
+      "sha256": "d2093d63c6bee1e66aa0f206bf1ca190a45742b0125be2dc149dcde415548cc9"
     },
     {
       "path": "README.md",
@@ -120,8 +122,8 @@
     },
     {
       "path": "docs/BUILDING.md",
-      "bytes": 4949,
-      "sha256": "5de02b942108420468de1e35499009fe64a01a5407dff1cd0b4bb2eb0cf94dc4"
+      "bytes": 4938,
+      "sha256": "1f7b71d9818fda5491449e581b7b8e4f2d292b54d034ea6ad561ce949d7fae4d"
     },
     {
       "path": "docs/FILE_POLICY.md",
@@ -165,8 +167,8 @@
     },
     {
       "path": "docs/TEST_REPORT.md",
-      "bytes": 11677,
-      "sha256": "b50621483b6257d745f009497ef5e60abfba12c6f18264772679661421f3ab6d"
+      "bytes": 12197,
+      "sha256": "0429c744a48fb1ae48c1c37fb28256d7f2be7622816d23bf4024b9773c0ede9e"
     },
     {
       "path": "docs/THEMES.md",
@@ -175,8 +177,8 @@
     },
     {
       "path": "docs/WINDOWS_ACCEPTANCE.md",
-      "bytes": 8330,
-      "sha256": "e6caeeb62c27c62812b19bcef879e08416d3ff07c9ec7530914d9f60143c62c1"
+      "bytes": 8467,
+      "sha256": "abe19112f1d14941724bffffaab1abe847904d77fb60fd04fda7d1a6619af4b5"
     },
     {
       "path": "docs/browser-test-results.json",

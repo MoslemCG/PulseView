@@ -4,7 +4,7 @@
 
 Install **Visual Studio 2022 or Build Tools 2022**, with **Desktop development with C++**, MSVC v143, a Windows 11 SDK **10.0.22621 or newer**, and **CMake 3.24+**. The supplied preset uses the Visual Studio 17 2022 generator and x64 architecture.
 
-Install the **Microsoft Edge WebView2 Evergreen x64 Runtime** if it is missing. The SDK is a build dependency; the Runtime is a separate execution dependency. Windows installations frequently already have the Runtime, but the app does not assume that it is always present. Distribution references are in [SOURCES.md](docs/SOURCES.md).
+Install the **Microsoft Edge WebView2 Evergreen x64 Runtime** if it is missing. The SDK is a build dependency; the Runtime is a separate execution dependency. Windows installations frequently already have the Runtime, but the app does not assume that it is always present. Distribution references are in [SOURCES.md](SOURCES.md).
 
 Node.js is **not required to build or run the Windows app**. Node 20+ is used only for frontend model tests and regenerating metric definitions. Python/Playwright/TypeScript are optional UI-test tools.
 
@@ -91,7 +91,9 @@ and isolated installer install/uninstall smoke on Windows Server 2025, then
 publishes Setup, portable ZIP and SHA256 checksums as GitHub Release assets.
 Installer smoke never runs on a developer's real installation.
 
-The included GitHub Actions workflow performs a Windows compile and unit tests after you push the project to a repository. It has not been run as part of this delivery and is not a substitute for testing on real GPU hardware.
+The GitHub Actions workflow has passed the Windows compile and native unit tests.
+Installer smoke is an additional release gate; neither check replaces testing
+GPU correctness, DPI and overlay behavior on real hardware.
 
 
 ## Frontend preview and tests

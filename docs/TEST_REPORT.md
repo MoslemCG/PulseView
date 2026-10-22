@@ -10,6 +10,14 @@ passed 77 checks, including footer and About version visibility. About was
 captured and visually checked from the actual preview frontend. Packaging verified
 the executable ProductVersion and staged app-local C++ runtime files.
 
+GitHub run [39831019559](https://github.com/MoslemCG/PulseView/actions/runs/39831019559)
+passed the native build/tests, Setup compilation and the isolated Server 2025
+installer smoke: install, executable version 1.1.0, uninstall and preservation of
+the synthetic user-data marker. That smoke does not launch the app or validate
+hardware. Microsoft bootstrapper signature verification also passed before it was
+bundled; the missing-runtime installation branch is not claimed tested when the
+runner already has WebView2.
+
 The previous GitHub run 39824960646 independently passed its Windows build,
 71 Node tests, both native tests and package upload. New Setup installation and
 uninstallation are gated by the isolated Windows Server 2025 CI smoke; see its

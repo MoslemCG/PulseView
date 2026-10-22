@@ -10,12 +10,13 @@ below remain pending; do not infer GPU, DPI or overlay correctness from CI.
 
 ## Build and packaging
 
-- [ ] Configure/build Release using the documented Visual Studio 2022 x64 preset; keep configure/build logs.
-- [ ] Run `ctest --preset windows-release`, including native JSON/atomic-write validation.
-- [ ] Run `npm run check`, `npm test`; regenerate metric definitions and verify no unexpected drift.
+- [x] Configure/build Release using the documented Visual Studio 2022 x64 preset; logs in GitHub run 39831019559.
+- [x] Run `ctest --preset windows-release`, including native JSON/atomic-write validation.
+- [x] Run `npm run check`, `npm test`; regenerate metric definitions and verify no unexpected drift.
+- [x] CI-only Setup install/version/uninstall smoke; synthetic user data preserved (run 39831019559).
 - [ ] Stage with `scripts/package.ps1`; launch the staged executable, not only the build-tree copy.
 - [ ] Verify missing `ui` and missing WebView2 Runtime produce understandable errors, not a blank "success" window.
-- [ ] Verify dependency licenses accompany a distribution; install required MSVC/WebView2 runtimes through supported channels, not silent network download.
+- [ ] Review final dependency notices; C++ runtime ships app-locally. Setup may install Microsoft's signed WebView2 bootstrapper when missing; production telemetry never downloads code.
 
 ## Native host and security
 
