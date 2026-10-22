@@ -1,0 +1,17 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": {"major": 3, "minor": 24, "patch": 0},
+  "configurePresets": [
+    {"name": "windows-x64", "displayName": "Windows x64 / Visual Studio 2022", "generator": "Visual Studio 17 2022", "architecture": "x64", "binaryDir": "${sourceDir}/out/build/windows-x64", "cacheVariables": {"PULSEVIEW_BUILD_APP": "ON", "BUILD_TESTING": "ON"}},
+    {"name": "portable-tests", "displayName": "Portable tests only (not the Windows app)", "generator": "Ninja", "binaryDir": "${sourceDir}/out/build/portable", "cacheVariables": {"PULSEVIEW_BUILD_APP": "OFF", "BUILD_TESTING": "ON", "CMAKE_BUILD_TYPE": "Debug"}}
+  ],
+  "buildPresets": [
+    {"name": "release", "configurePreset": "windows-x64", "configuration": "Release"},
+    {"name": "debug", "configurePreset": "windows-x64", "configuration": "Debug"},
+    {"name": "portable-tests", "configurePreset": "portable-tests"}
+  ],
+  "testPresets": [
+    {"name": "windows-release", "configurePreset": "windows-x64", "configuration": "Release", "output": {"outputOnFailure": true}},
+    {"name": "portable-tests", "configurePreset": "portable-tests", "output": {"outputOnFailure": true}}
+  ]
+}

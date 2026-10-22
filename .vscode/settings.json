@@ -1,0 +1,6 @@
+{
+ "cmake.useCMakePresets": "always",
+ "files.associations": {"*.css":"css"},
+ "editor.tabSize": 2,
+ "files.encoding":"utf8"
+}

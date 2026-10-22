@@ -1,0 +1,32 @@
+/* @name Amethyst */
+:root[data-theme="amethyst"] {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#74e3a1; --load-mid:#ffae5e; --load-high:#ff6f93;
+ color-scheme:dark;
+ --bg:#0c0918; --title:#141027; --panel:#151125; --panel-top:#1b1630;
+ --border:#342b4d; --border-soft:#251f3b; --grid:#29213e; --popup:#211832;
+ --text:#f0eafb; --muted:#a496c0; --faint:#6e608b; --accent:#bba0ff;
+ --accent-soft:#302046; --hover:#302443; --input:#120e20;
+ --gpu:#ed6dc9; --vram:#f8be6b; --cpu:#72e6d0; --ram:#b69bff;
+ --net:#75bbff; --upload:#d083f5; --copy:#6cdec9;
+ --chart-bottom:#2a1b4d; --danger:#ff7b9a; --success:#72e6d0;
+ --shadow:rgba(0,0,0,.4); --chart-fill-gain:1.06; --chart-glow-radius:4.2;
+ --gpu-fill-mid:#7824a2; --gpu-fill-bottom:#2b1554;
+ --vram-fill-mid:#845271; --vram-fill-bottom:#2d1d50;
+ --cpu-fill-mid:#286b78; --cpu-fill-bottom:#152c45;
+ --net-fill-mid:#2a60b7; --net-fill-bottom:#172449;
+
+ --gpu-highlight:var(--gpu);
+ --vram-highlight:var(--vram);
+ --cpu-highlight:var(--cpu);
+ --ram-fill-mid:#705ba6; --ram-fill-bottom:var(--chart-bottom);
+ --ram-highlight:var(--ram);
+ --net-highlight:var(--net);
+ --upload-fill-mid:#7d4fa1; --upload-fill-bottom:var(--chart-bottom);
+ --upload-highlight:var(--upload);
+ --copy-fill-mid:#4b7c8b; --copy-fill-bottom:var(--chart-bottom);
+ --copy-highlight:var(--copy);
+ --chart-tooltip-bg:var(--popup); --chart-tooltip-border:var(--border);
+
+  --gpu-fill-top:var(--gpu); --vram-fill-top:var(--vram);
+}

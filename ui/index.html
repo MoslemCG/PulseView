@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<title>PulseView · Performance workspace</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="themes/midnight.css">
+<link rel="stylesheet" href="themes/graphite.css">
+<link rel="stylesheet" href="themes/onyx.css">
+<link rel="stylesheet" href="themes/aurora.css">
+<link rel="stylesheet" href="themes/ivory.css">
+<link rel="stylesheet" href="themes/amethyst.css">
+<link rel="stylesheet" href="themes/cobalt.css">
+<link rel="stylesheet" href="themes/ember.css">
+<link rel="stylesheet" href="app.css">
+<style id="custom-theme"></style>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<div id="app">
+<header class="titlebar">
+ <div class="brand drag-zone"><img src="assets/logo.svg" alt=""><span>PulseView<small>PERFORMANCE WORKSPACE</small></span></div>
+ <button id="preset-button" class="preset-button" title="Choose a saved layout"><span id="preset-name">Unsaved layout</span><span id="dirty" hidden>●</span><span data-icon="chevron"></span></button>
+ <button id="save-button" class="icon-button" title="Save preset · Ctrl+S" aria-label="Save preset" data-icon="save"></button>
+ <div class="title-spacer drag-zone"></div>
+ <button id="add-button" class="quick-add" title="Widget library · Ctrl+K"><span data-icon="search"></span><span class="quick-add-label">Find a metric or widget</span><kbd>Ctrl K</kbd></button>
+ <button id="theme-button" class="icon-button" title="Themes" aria-label="Themes" data-icon="palette"></button>
+ <button id="settings-button" class="icon-button" title="Settings" aria-label="Settings" data-icon="settings"></button>
+ <div class="window-buttons"><button data-window="minimize" aria-label="Minimize" data-icon="minus"></button><button data-window="maximize" aria-label="Maximize or restore" data-icon="restore"></button><button data-window="close" class="window-close" aria-label="Close" data-icon="close"></button></div>
+</header>
+<nav class="workspace-toolbar" aria-label="Workspace tools">
+ <button id="lock-button" class="tool-button" title="Lock or unlock layout"><span data-icon="unlock"></span><span class="tool-label">Edit layout</span></button><i class="divider"></i>
+ <button id="split-x-button" class="tool-button" title="Split selected pane left / right · Ctrl+Alt+V"><span data-icon="splitX"></span><span class="tool-label">Split</span></button>
+ <button id="split-y-button" class="tool-button" title="Split selected pane top / bottom · Ctrl+Alt+H" aria-label="Split top bottom" data-icon="splitY"></button>
+ <button id="undo-button" class="tool-button" title="Undo layout change · Ctrl+Z" aria-label="Undo" data-icon="undo"></button><button id="redo-button" class="tool-button" title="Redo layout change · Ctrl+Y" aria-label="Redo" data-icon="redo"></button>
+ <span id="layout-info" class="muted toolbar-hint">Every pane is independently resizable</span><div class="title-spacer"></div>
+ <button id="compress-button" class="tool-button" title="Compressed time axis (older samples packed to the left)" aria-label="Compressed time axis" aria-pressed="false" data-icon="compress"></button>
+ <button id="chrome-button" class="tool-button" title="Charts only · Middle-click chart / Ctrl+Shift+C" aria-label="Charts-only mode" aria-pressed="false" data-icon="maximize"></button>
+ <button id="pin-button" class="tool-button" title="Always on top" aria-label="Always on top" data-icon="pin"></button>
+ <button id="pause-button" class="tool-button" title="Pause sampling · Space" aria-label="Pause" data-icon="pause"></button>
+ <label class="refresh-control" title="Sampling interval in seconds"><span data-icon="clock"></span><select id="refresh-select" aria-label="Refresh interval"><option value="0.25">0.25 s</option><option value="0.5">0.5 s</option><option value="1" selected>1 s</option><option value="2">2 s</option><option value="5">5 s</option><option value="10">10 s</option></select></label>
+ <span id="theme-label" class="theme-name">Midnight</span>
+</nav>
+<div id="focus-bar" hidden><button id="restore-focus" class="tool-button"><span data-icon="left"></span>Restore layout</button><span id="focus-title"></span><span class="muted">Click chart again or press Esc</span></div>
+<main id="workspace" tabindex="-1" aria-label="Performance panes. Middle-click to toggle application bars."><div id="layout-root"></div></main>
+<footer class="statusbar"><span id="connection-status"><i class="status-dot"></i>Connecting…</span><span id="sample-status"></span><div class="title-spacer"></div><span id="pane-count">1 pane</span><span id="data-notice">Local · private · offline</span><button id="help-button" title="Keyboard shortcuts and help" aria-label="Help" data-icon="keyboard"></button></footer>
+</div>
+<div id="menu-root"></div><div id="toasts" role="status" aria-live="polite"></div>
+<dialog id="modal"><div id="modal-content"></div></dialog>
+</body>
+</html>

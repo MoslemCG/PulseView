@@ -1,0 +1,56 @@
+/* @name Aurora */ :root[data-theme="aurora"]  {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#57e0a0; --load-mid:#ffb35c; --load-high:#ff6b7d;
+  color-scheme:dark;
+  --bg:#061414;
+  --title:#091d1e;
+  --panel:#0a2122;
+  --panel-top:#0d2929;
+  --border:#1b4443;
+  --border-soft:#173333;
+  --grid:#173432;
+  --popup:#0d2a2b;
+  --text:#e4f7ed;
+  --muted:#81ada9;
+  --faint:#4e7a76;
+  --accent:#4cdec7;
+  --accent-soft:#123e39;
+  --hover:#18413d;
+  --input:#071e1d;
+  --cpu:#b6ee73;
+  --gpu:#ee7da9;
+  --vram:#efd072;
+  --ram:#b499ed;
+  --net:#49d0e7;
+  --upload:#bd8bdf;
+  --copy:#41e7b8;
+  --chart-bottom:#18467a;
+  --danger:#ff8796;
+  --success:#65ecc3;
+  --shadow:rgba(0,0,0,.34);
+
+  --gpu-fill-mid:#836292;
+  --gpu-fill-bottom:var(--chart-bottom);
+  --gpu-highlight:var(--gpu);
+  --vram-fill-mid:#848b76;
+  --vram-fill-bottom:var(--chart-bottom);
+  --vram-highlight:var(--vram);
+  --cpu-fill-mid:#679a76;
+  --cpu-fill-bottom:var(--chart-bottom);
+  --cpu-highlight:var(--cpu);
+  --ram-fill-mid:#6670b4;
+  --ram-fill-bottom:var(--chart-bottom);
+  --ram-highlight:var(--ram);
+  --net-fill-mid:#308bb0;
+  --net-fill-bottom:var(--chart-bottom);
+  --net-highlight:var(--net);
+  --upload-fill-mid:#6a68ac;
+  --upload-fill-bottom:var(--chart-bottom);
+  --upload-highlight:var(--upload);
+  --copy-fill-mid:#2c9699;
+  --copy-fill-bottom:var(--chart-bottom);
+  --copy-highlight:var(--copy);
+  --chart-tooltip-bg:var(--popup); --chart-tooltip-border:var(--border);
+
+  --gpu-fill-top:var(--gpu); --vram-fill-top:var(--vram);
+}

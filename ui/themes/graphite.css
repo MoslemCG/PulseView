@@ -1,0 +1,56 @@
+/* @name Graphite */ :root[data-theme="graphite"]  {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#7fd48a; --load-mid:#f0a54a; --load-high:#f06a6a;
+  color-scheme:dark;
+  --bg:#111317;
+  --title:#171a20;
+  --panel:#1a1e25;
+  --panel-top:#1d222a;
+  --border:#343c47;
+  --border-soft:#2b333d;
+  --grid:#2a3039;
+  --popup:#202630;
+  --text:#edf0f7;
+  --muted:#97a3b5;
+  --faint:#626f82;
+  --accent:#6ba9ff;
+  --accent-soft:#273b58;
+  --hover:#2c3644;
+  --input:#161c25;
+  --cpu:#80eec0;
+  --gpu:#f28dd5;
+  --vram:#f6bf70;
+  --ram:#a49df4;
+  --net:#69b8ff;
+  --upload:#ba96ff;
+  --copy:#58ddd6;
+  --chart-bottom:#52648a;
+  --danger:#ff7988;
+  --success:#80eec0;
+  --shadow:rgba(0,0,0,.34);
+
+  --gpu-fill-mid:#a278b0;
+  --gpu-fill-bottom:var(--chart-bottom);
+  --gpu-highlight:var(--gpu);
+  --vram-fill-mid:#a4927d;
+  --vram-fill-bottom:var(--chart-bottom);
+  --vram-highlight:var(--vram);
+  --cpu-fill-mid:#69a9a5;
+  --cpu-fill-bottom:var(--chart-bottom);
+  --cpu-highlight:var(--cpu);
+  --ram-fill-mid:#7b80bf;
+  --ram-fill-bottom:var(--chart-bottom);
+  --ram-highlight:var(--ram);
+  --net-fill-mid:#5e8ec4;
+  --net-fill-bottom:var(--chart-bottom);
+  --net-highlight:var(--net);
+  --upload-fill-mid:#867dc4;
+  --upload-fill-bottom:var(--chart-bottom);
+  --upload-highlight:var(--upload);
+  --copy-fill-mid:#55a0b0;
+  --copy-fill-bottom:var(--chart-bottom);
+  --copy-highlight:var(--copy);
+  --chart-tooltip-bg:var(--popup); --chart-tooltip-border:var(--border);
+
+  --gpu-fill-top:var(--gpu); --vram-fill-top:var(--vram);
+}

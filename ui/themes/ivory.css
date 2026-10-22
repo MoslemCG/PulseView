@@ -1,0 +1,57 @@
+/* @name Ivory */ :root[data-theme="ivory"]  {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#2f9e44; --load-mid:#e07b00; --load-high:#d6334a;
+  color-scheme:light;
+  --bg:#e9edf4;
+  --title:#f5f7fa;
+  --panel:#fbfcff;
+  --panel-top:#ffffff;
+  --border:#cbd6e5;
+  --border-soft:#e0e7f0;
+  --grid:#e5ebf4;
+  --popup:#ffffff;
+  --text:#1a2c44;
+  --muted:#627893;
+  --faint:#8a9aaf;
+  --accent:#097ddd;
+  --accent-soft:#e0f0ff;
+  --hover:#e8f0fa;
+  --input:#f3f6fb;
+  --cpu:#50a52a;
+  --gpu:#c02abd;
+  --vram:#d88506;
+  --ram:#7d52d9;
+  --net:#098ed7;
+  --upload:#8e4ccf;
+  --copy:#09a08b;
+  --chart-bottom:#a6c4eb;
+  --danger:#db425d;
+  --success:#4ca036;
+  --shadow:rgba(26,44,68,.15);
+
+  --gpu-fill-mid:#b377d4;
+  --gpu-fill-bottom:var(--chart-bottom);
+  --gpu-highlight:var(--gpu);
+  --vram-fill-mid:#bfa478;
+  --vram-fill-bottom:var(--chart-bottom);
+  --vram-highlight:var(--vram);
+  --cpu-fill-mid:#7bb48a;
+  --cpu-fill-bottom:var(--chart-bottom);
+  --cpu-highlight:var(--cpu);
+  --ram-fill-mid:#928be2;
+  --ram-fill-bottom:var(--chart-bottom);
+  --ram-highlight:var(--ram);
+  --net-fill-mid:#58a9e1;
+  --net-fill-bottom:var(--chart-bottom);
+  --net-highlight:var(--net);
+  --upload-fill-mid:#9a88dd;
+  --upload-fill-bottom:var(--chart-bottom);
+  --upload-highlight:var(--upload);
+  --copy-fill-mid:#58b2bb;
+  --copy-fill-bottom:var(--chart-bottom);
+  --copy-highlight:var(--copy);
+  --chart-tooltip-bg:var(--popup); --chart-tooltip-border:var(--border);
+  --chart-glow-radius:1.8; --chart-glow-opacity:.12; --chart-highlight-opacity:.14; --chart-fill-gain:.72;
+
+  --gpu-fill-top:var(--gpu); --vram-fill-top:var(--vram);
+}

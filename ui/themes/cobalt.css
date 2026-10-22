@@ -1,0 +1,32 @@
+/* @name Cobalt */
+:root[data-theme="cobalt"] {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#4fe89a; --load-mid:#ffab3d; --load-high:#ff5a78;
+ color-scheme:dark;
+ --bg:#040d18; --title:#061324; --panel:#08182a; --panel-top:#0b1d33;
+ --border:#153952; --border-soft:#112c43; --grid:#102c43; --popup:#0b2239;
+ --text:#e6f3ff; --muted:#82abc8; --faint:#4c708e; --accent:#40d8ff;
+ --accent-soft:#103b52; --hover:#12364e; --input:#061628;
+ --gpu:#ff46c8; --vram:#ffd159; --cpu:#5cf4b0; --ram:#ad85ff;
+ --net:#29c9ff; --upload:#a05bff; --copy:#53e5e0;
+ --chart-bottom:#122745; --danger:#ff739b; --success:#5cf4b0;
+ --shadow:rgba(0,0,0,.4); --chart-fill-gain:1.1; --chart-glow-radius:5;
+ --gpu-fill-mid:#7026ac; --gpu-fill-bottom:#241647;
+ --vram-fill-mid:#52698a; --vram-fill-bottom:#14233e;
+ --cpu-fill-mid:#17665f; --cpu-fill-bottom:#102d3d;
+ --net-fill-mid:#075ba9; --net-fill-bottom:#10214a;
+
+ --gpu-highlight:var(--gpu);
+ --vram-highlight:var(--vram);
+ --cpu-highlight:var(--cpu);
+ --ram-fill-mid:#6056a2; --ram-fill-bottom:var(--chart-bottom);
+ --ram-highlight:var(--ram);
+ --net-highlight:var(--net);
+ --upload-fill-mid:#5941a2; --upload-fill-bottom:var(--chart-bottom);
+ --upload-highlight:var(--upload);
+ --copy-fill-mid:#328692; --copy-fill-bottom:var(--chart-bottom);
+ --copy-highlight:var(--copy);
+ --chart-tooltip-bg:var(--popup); --chart-tooltip-border:var(--border);
+
+  --gpu-fill-top:var(--gpu); --vram-fill-top:var(--vram);
+}

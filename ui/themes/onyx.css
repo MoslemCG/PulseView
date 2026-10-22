@@ -1,0 +1,47 @@
+/* @name Onyx
+   Pure neutral dark: black surfaces, graphite grays and silver accents with no blue or warm tint.
+   Chart hues stay distinct but softened; each fill fades in its own hue toward near-black. */ :root[data-theme="onyx"]  {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#8fdc6a; --load-mid:#f0a84a; --load-high:#f0645f;
+  color-scheme:dark;
+  --bg:#0a0a0a;
+  --title:#111111;
+  --panel:#141414;
+  --panel-top:#181818;
+  --border:#2e2e2e;
+  --border-soft:#232323;
+  --grid:#222222;
+  --popup:#1a1a1a;
+  --text:#ececec;
+  --muted:#9a9a9a;
+  --faint:#5f5f5f;
+  --accent:#cfcfcf;
+  --accent-soft:#2b2b2b;
+  --hover:#262626;
+  --input:#0f0f0f;
+  --cpu:#9be36a;
+  --gpu:#e47ad0;
+  --vram:#f0b35a;
+  --ram:#a99cf0;
+  --net:#6db3f0;
+  --upload:#b48af0;
+  --copy:#5fd3c4;
+  --chart-bg:transparent;
+  --chart-bottom:#121212;
+  --danger:#f06a6a;
+  --success:#8fe07a;
+  --shadow:rgba(0,0,0,.5);
+
+  /* Same-hue ramps that settle into neutral black at the baseline. */
+  --gpu-fill-top:var(--gpu); --gpu-fill-mid:#7a3a6e; --gpu-fill-bottom:#1a0f18; --gpu-highlight:#f6b2e6;
+  --vram-fill-top:var(--vram); --vram-fill-mid:#7f5a26; --vram-fill-bottom:#1b140b; --vram-highlight:#ffd99a;
+  --cpu-fill-mid:#4f7a35; --cpu-fill-bottom:#10180b; --cpu-highlight:#c9f5a6;
+  --ram-fill-mid:#574f84; --ram-fill-bottom:#14121e; --ram-highlight:#d0c8ff;
+  --net-fill-mid:#375f84; --net-fill-bottom:#0d141c; --net-highlight:#a9d6ff;
+  --upload-fill-mid:#5d4784; --upload-fill-bottom:#15101e; --upload-highlight:#d6bcff;
+  --copy-fill-mid:#2f6f67; --copy-fill-bottom:#0b1715; --copy-highlight:#9eeee3;
+  --chart-fill-gain:1; --chart-fill-hug:1; --chart-glow-radius:4;
+  --chart-glow-opacity:.26; --chart-highlight-opacity:.38;
+  --chart-crosshair:rgba(200,200,200,.45);
+  --chart-tooltip-bg:#0d0d0d; --chart-tooltip-border:#333333;
+}

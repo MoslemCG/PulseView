@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.gif binary
+
+# Defense in depth for source archives made with git archive.
+docs/design/*.png export-ignore
+*.lnk export-ignore
+*.log export-ignore
+.env* export-ignore

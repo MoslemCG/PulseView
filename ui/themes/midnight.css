@@ -1,0 +1,46 @@
+/* @name Midnight · Reference
+   The visual baseline. All chart fills derive from these CSS tokens. */ :root, :root[data-theme="midnight"]  {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#5fe05a; --load-mid:#ffa11c; --load-high:#ff3f5c;
+  color-scheme:dark;
+  --bg:#060f1c;
+  --title:#091426;
+  --panel:#0a1625;
+  --panel-top:#0c1a2b;
+  --border:#1b3046;
+  --border-soft:#15283a;
+  --grid:#132438;
+  --popup:#0d1c30;
+  --text:#e6edf8;
+  --muted:#839db8;
+  --faint:#516b87;
+  --accent:#26aaff;
+  --accent-soft:#0c2d4b;
+  --hover:#142a42;
+  --input:#0a182a;
+  --cpu:#a3ef25;
+  --gpu:#f52cdd;
+  --vram:#ffad0a;
+  --ram:#a568ff;
+  --net:#25afff;
+  --upload:#b747ff;
+  --copy:#31d9bd;
+  --chart-bottom:#182044;
+  /* Same-hue ramps: each fill darkens in its own color toward the baseline. */
+  --gpu-fill-top:#f322e6; --gpu-fill-mid:#8a1284; --gpu-fill-bottom:#2c0a3e; --gpu-highlight:#ff79ee;
+  --vram-fill-top:#ff9a1a; --vram-fill-mid:#9a4a0c; --vram-fill-bottom:#2e1608; --vram-highlight:#ffda61;
+  --cpu-fill-mid:#4d8a14; --cpu-fill-bottom:#122a0c; --cpu-highlight:#ccff70;
+  --ram-fill-mid:#5a2aa8; --ram-fill-bottom:#1c1040;
+  --net-fill-mid:#0b62b8; --net-fill-bottom:#081d42; --net-highlight:#6ed4ff;
+  --upload-fill-mid:#6420a8; --upload-fill-bottom:#1e0c3c;
+  --copy-fill-mid:#148a78; --copy-fill-bottom:#082a2a;
+  --chart-fill-gain:1; --chart-fill-hug:1; --chart-glow-radius:4.5;
+  --chart-glow-opacity:.30; --chart-highlight-opacity:.42;
+  --chart-tooltip-bg:#0b1a2d; --chart-tooltip-border:#27445f;
+  --danger:#ff687c;
+  --success:#a2ef51;
+  --shadow:rgba(0,0,0,.34);
+  --pane-radius:5px;
+  --pane-padding:12px;
+  --font:'Segoe UI Variable Text','Segoe UI',Arial,sans-serif;
+}

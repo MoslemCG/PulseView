@@ -1,0 +1,32 @@
+/* @name Ember */
+:root[data-theme="ember"] {
+  /* Per-thread load colors: <50% · 50–80% · ≥80% (5 s average). */
+  --load-low:#b5e06a; --load-mid:#ff9a3c; --load-high:#ff5a4e;
+ color-scheme:dark;
+ --bg:#110d0f; --title:#1b1415; --panel:#201819; --panel-top:#291e20;
+ --border:#473134; --border-soft:#342427; --grid:#342529; --popup:#2a1e21;
+ --text:#fff0e5; --muted:#c2a093; --faint:#836761; --accent:#ffa765;
+ --accent-soft:#492d22; --hover:#402927; --input:#1b1215;
+ --gpu:#ff6e8e; --vram:#ffb24c; --cpu:#bde778; --ram:#d49aef;
+ --net:#6fcde3; --upload:#cb91e8; --copy:#8dddd0;
+ --chart-bottom:#372136; --danger:#ff7082; --success:#bde778;
+ --shadow:rgba(0,0,0,.38); --chart-fill-gain:1; --chart-glow-radius:3.5;
+ --gpu-fill-mid:#972e57; --gpu-fill-bottom:#321a37;
+ --vram-fill-mid:#995b35; --vram-fill-bottom:#30203a;
+ --cpu-fill-mid:#596f39; --cpu-fill-bottom:#1e2c28;
+ --net-fill-mid:#28657b; --net-fill-bottom:#172d3e;
+
+ --gpu-highlight:var(--gpu);
+ --vram-highlight:var(--vram);
+ --cpu-highlight:var(--cpu);
+ --ram-fill-mid:#865e92; --ram-fill-bottom:var(--chart-bottom);
+ --ram-highlight:var(--ram);
+ --net-highlight:var(--net);
+ --upload-fill-mid:#81598f; --upload-fill-bottom:var(--chart-bottom);
+ --upload-highlight:var(--upload);
+ --copy-fill-mid:#627f83; --copy-fill-bottom:var(--chart-bottom);
+ --copy-highlight:var(--copy);
+ --chart-tooltip-bg:var(--popup); --chart-tooltip-border:var(--border);
+
+  --gpu-fill-top:var(--gpu); --vram-fill-top:var(--vram);
+}

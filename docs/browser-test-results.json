@@ -1,0 +1,33 @@
+{
+  "passed": 26,
+  "checks": [
+    "Starts with exactly one cell",
+    "Nested x then y splits create an irregular 3-cell tree",
+    "Assigning a metric replaces only the selected cell",
+    "Single chart click does not focus the pane",
+    "Chart double-click focuses the pane",
+    "Second chart double-click restores the exact split tree",
+    "Dragging a local splitter persists its ratio",
+    "Undo restores splitter geometry",
+    "Redo restores splitter geometry",
+    "Layout lock prevents structural edits",
+    "Save dialog persists named preset and geometry in preview adapter",
+    "Preset includes window size and recursive tree",
+    "Per-widget history and color settings are applied",
+    "Refresh seconds configure the sampler through the bridge",
+    "CSS theme switch applies without changing the layout",
+    "Overview preset loads all nine performance panes",
+    "Every simulated logical processor has a separate chart",
+    "Shrinking the window preserves every pane with scroll fallback",
+    "Viewport resizing does not mutate saved split ratios",
+    "Growing the window restores the same tree",
+    "Pause stops preview sampling",
+    "Network axis retains raw bytes/sec with automatic byte formatting by default",
+    "Compact VRAM-only workspace remains a single pane",
+    "Session draft restores on frontend reload",
+    "Session autosave does not replace named presets",
+    "No uncaught browser JavaScript errors"
+  ],
+  "javascriptErrors": [],
+  "environment": "Headless Chromium; real frontend with offline trusted-module harness and explicit simulated browser data. Not a Windows native integration test."
+}

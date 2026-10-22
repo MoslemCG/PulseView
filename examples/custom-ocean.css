@@ -1,0 +1,22 @@
+/* @name Ocean — custom ramp example
+   Import with Appearance / skins > Install CSS theme. This file changes no layout rules. */
+:root {
+  color-scheme: dark;
+  --bg:#06111b; --title:#0a1928; --panel:#0b1b2c; --panel-top:#0e2134;
+  --border:#214157; --border-soft:#153145; --grid:#153048;
+  --popup:#11293b; --input:#092034; --hover:#15344b;
+  --text:#e6f2ff; --muted:#88b1c9; --faint:#557b94;
+  --accent:#42cbff; --accent-soft:#133a55;
+  --gpu:#ff44dd; --vram:#ffbf38; --cpu:#b2ed45;
+  --ram:#a990ff; --net:#35c7ff; --upload:#ca7bff; --copy:#44e0c2;
+  --chart-bottom:#162448;
+  --gpu-fill-top:var(--gpu); --gpu-fill-mid:#752083; --gpu-fill-bottom:#202353; --gpu-highlight:#ff9eee;
+  --vram-fill-top:#ff9b44; --vram-fill-mid:#513da0; --vram-fill-bottom:#212e66; --vram-highlight:#ffe18a;
+  --cpu-fill-top:var(--cpu); --cpu-fill-mid:#466f31; --cpu-fill-bottom:#11333b; --cpu-highlight:#dfff8b;
+  --ram-fill-top:var(--ram); --ram-fill-mid:#473980; --ram-fill-bottom:#1e284e;
+  --net-fill-top:var(--net); --net-fill-mid:#13659b; --net-fill-bottom:#112d4c; --net-highlight:#8eeaff;
+  --upload-fill-top:var(--upload); --upload-fill-mid:#533685; --upload-fill-bottom:#24274a;
+  --copy-fill-top:var(--copy); --copy-fill-mid:#247a72; --copy-fill-bottom:#113538;
+  --chart-fill-gain:1; --chart-glow-radius:4.5; --chart-glow-opacity:.28; --chart-highlight-opacity:.38;
+  --chart-tooltip-bg:#0b2235; --chart-tooltip-border:#2d536e;
+}

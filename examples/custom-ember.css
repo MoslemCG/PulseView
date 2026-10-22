@@ -1,0 +1,45 @@
+/* @name Ember — custom CSS example
+   Import through the palette dialog. No rebuild needed.
+   Override only colors; do not hide panes or change split geometry. */
+:root {
+  color-scheme: dark;
+  --bg: #110f17;
+  --title: #19141f;
+  --panel: #1b1721;
+  --panel-top: #211b28;
+  --border: #3a2b43;
+  --border-soft: #302638;
+  --grid: #2a2332;
+  --popup: #241c2b;
+  --input: #17131e;
+  --hover: #35233f;
+  --text: #f3eaf8;
+  --muted: #b69bbf;
+  --faint: #7f6688;
+  --accent: #ff9d55;
+  --accent-soft: #482b22;
+  --cpu: #c6e95c;
+  --gpu: #f45ebd;
+  --vram: #ffb34e;
+  --ram: #b988ed;
+  --net: #53b9ff;
+  --upload: #cd78eb;
+  --copy: #4adbb2;
+  --chart-bottom: #853889;
+  --danger: #ff6979;
+  --success: #a7de65;
+}
+
+/* Optional 1.1 chart ramps. Explicit per-family stops avoid an inherited color mismatch. */
+:root {
+  --gpu-fill-top: var(--gpu); --gpu-fill-mid: #722961; --gpu-fill-bottom: #2b173a;
+  --vram-fill-top: #ff8c38; --vram-fill-mid: #67388e; --vram-fill-bottom: #2e2448;
+  --cpu-fill-top: var(--cpu); --cpu-fill-mid: #526929; --cpu-fill-bottom: #1b2c2c;
+  --ram-fill-top: var(--ram); --ram-fill-mid: #613c83; --ram-fill-bottom: #281932;
+  --net-fill-top: var(--net); --net-fill-mid: #245078; --net-fill-bottom: #142535;
+  --upload-fill-top: var(--upload); --upload-fill-mid: #653678; --upload-fill-bottom: #2b193a;
+  --copy-fill-top: var(--copy); --copy-fill-mid: #236854; --copy-fill-bottom: #172d30;
+  --chart-fill-gain: 1; --chart-glow-radius: 4; --chart-glow-opacity: .26;
+  --chart-highlight-opacity: .35;
+  --chart-tooltip-bg: #241c2b; --chart-tooltip-border: #50395b;
+}

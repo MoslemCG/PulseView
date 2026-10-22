@@ -1,0 +1,36 @@
+// Original stroke-only SVG icon set. No font, icon package, or external asset dependency.
+const paths = {
+    pulse: 'M2 13h4l3-8 4 15 4-12 2 5h3',
+    cpu: 'M7 7h10v10H7z M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4',
+    gpu: 'M3 6h17v12H3z M20 9h2m-2 6h2M6 18v3m4-3v3M7 10h5v5H7zm8 0h2m-2 4h2',
+    memory: 'M2 7h20v10H2z M5 10v4m4-4v4m4-4v4m4-4v4M5 17v3m4-3v3m4-3v3m4-3v3',
+    network: 'M2 8a16 16 0 0 1 20 0M5 12a11 11 0 0 1 14 0M8 16a6 6 0 0 1 8 0M12 20h.01',
+    disk: 'M4 3h16v18H4z M7 7h10M7 11h10m-9 6h.01M13 17h4',
+    grid: 'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',
+    chart: 'M3 3v18h18M6 15l4-6 4 3 6-8',
+    plus: 'M12 5v14M5 12h14', close: 'M6 6l12 12M6 18L18 6', minus: 'M5 12h14',
+    maximize: 'M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5', restore: 'M8 3h13v13M3 8h13v13H3z',
+    chevron: 'M7 10l5 5 5-5', left: 'M14 5l-7 7 7 7', right: 'M9 5l7 7-7 7',
+    save: 'M4 3h13l4 4v14H3V3z M7 3v6h10V3M7 21v-8h10v8',
+    folder: 'M3 5h7l2 3h9v12H3z', search: 'M10.5 3a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15M16 16l5 5',
+    settings: 'M9 3h6l1 3 3 1 2 5-2 5-3 1-1 3H9l-1-3-3-1-2-5 2-5 3-1z M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6',
+    palette: 'M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 2-2c0-1-1-2-1-3s1-2 2-2h3a2 2 0 0 0 2-2 9 9 0 0 0-9-9M7 9h.01M10 6h.01M15 6h.01M18 10h.01',
+    pin: 'M9 3h6l-1 6 4 4v2H6v-2l4-4z M12 15v7', pause: 'M8 5v14M16 5v14', play: 'M7 4l14 8-14 8z',
+    lock: 'M6 10h12v11H6z M8 10V6a4 4 0 0 1 8 0v4', unlock: 'M6 10h12v11H6z M8 10V6a4 4 0 0 1 8 0',
+    splitX: 'M3 3h18v18H3z M12 3v18', splitY: 'M3 3h18v18H3z M3 12h18',
+    dots: 'M5 12h.01M12 12h.01M19 12h.01', grip: 'M8 5h.01M16 5h.01M8 12h.01M16 12h.01M8 19h.01M16 19h.01',
+    up: 'M12 20V4M5 11l7-7 7 7', down: 'M12 4v16M5 13l7 7 7-7',
+    undo: 'M8 4L3 9l5 5M3 9h11a7 7 0 0 1 0 14', redo: 'M16 4l5 5-5 5M21 9H10a7 7 0 0 0 0 14',
+    check: 'M4 12l5 5L20 6', copy: 'M9 3h12v12H9z M15 15v6H3V9h6',
+    trash: 'M3 6h18M8 6V3h8v3M5 6l1 15h12l1-15M10 10v7m4-7v7',
+    compress: 'M21 4v16M16 4v16M12 4v16M9 4v16M6.5 4v16M4.5 4v16M3 4v16',
+    clock: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M12 7v5l4 3',
+    thermometer: 'M9 5a3 3 0 0 1 6 0v9a5 5 0 1 1-6 0z M12 8v10',
+    power: 'M13 2L4 14h7l-1 8 10-13h-8z', info: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M12 11v6m0-10h.01',
+    mouse: 'M5 2l14 9-7 2-4 7z M15 16l4 5', export: 'M12 16V3M7 8l5-5 5 5M4 14v7h16v-7',
+    import: 'M12 3v13M7 11l5 5 5-5M4 16v5h16v-5', eye: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6',
+    keyboard: 'M2 5h20v14H2z M5 9h.01m4 0h.01m4 0h.01m4 0h.01M6 14h12',
+};
+export function icon(name, cls = '') {
+    return `<svg class="icon ${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="${paths[name] || paths.chart}"/></svg>`;
+}
