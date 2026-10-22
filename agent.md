@@ -1,5 +1,14 @@
 # PulseView — mandatory handoff for coding agents
 
+Distribution update (22 October 2026): current version is 1.1.0, defined by
+`package.json`. Run `node scripts/sync-version.mjs` after a version change;
+`ui/core/version.js` is intentionally committed for builds without Node. CMake
+generates the native version/header from the same value. Footer and About show it.
+The tag workflow builds an unsigned per-user Setup and portable ZIP, runs isolated
+installer smoke tests, then publishes GitHub Release assets. Build/dependency and
+hardware acceptance limits below remain in effect; historical source-only delivery
+statements describe the original delivery, not the later binary distribution.
+
 File ownership and publication: follow `docs/FILE_POLICY.md` for every new file
 and tool. New permanent source/tests belong in Git; generated output and one-off
 experiments belong under ignored `out/`, private inputs under `.local/`. Enable

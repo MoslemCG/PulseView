@@ -208,6 +208,11 @@ with sync_playwright() as pw:
     check(name.get_attribute('dir')=='auto','Preset name field follows the typed text direction (Persian RTL)')
     name.fill('سلام test');check(name.input_value()=='سلام test','Persian and Latin text can be typed into the preset name')
     page.keyboard.press('Escape');settle(page)
+    expected_version=json.loads((ROOT/'package.json').read_text(encoding='utf-8'))['version']
+    check(page.locator('#app-version').inner_text()=='v'+expected_version,'Footer displays the current application version')
+    page.locator('#help-button').click();settle(page)
+    check(page.locator('#about-version').inner_text()=='PulseView '+expected_version,'About dialog displays the same current application version')
+    page.keyboard.press('Escape');settle(page)
     check(not errors,'No uncaught JavaScript errors in revision interaction suite')
     result={'passed':len(checks),'checks':checks,'javascriptErrors':errors,'environment':'Actual frontend, headless Chromium, trusted-asset harness with simulated readings. No native Windows execution.'}
     (OUTPUT/'revision-browser-test-results.json').write_text(json.dumps(result,indent=2),encoding='utf-8')

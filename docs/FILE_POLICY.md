@@ -34,8 +34,11 @@ Git. Disposable experiments and generated output do not.
    after checking its content, privacy and simulated-data labeling.
 5. `native/MetricDefinitions.h` is an intentional generated source exception:
    it is required for builds without Node and must stay synchronized. The source
-   manifest is another intentional public generated artifact. Other generated
-   outputs stay under `out/` unless an explicit reviewed requirement says otherwise.
+   manifest is another intentional public generated artifact.
+   `ui/core/version.js` is also committed: it derives from package.json for native
+   builds without Node. Installer sources live under `scripts/installer/`; Setup,
+   ZIPs, downloaded prerequisites and checksums stay under ignored `out/`.
+   Other generated outputs stay under `out/` unless an explicit reviewed requirement says otherwise.
 6. Never use `git add -f`, `--no-verify`, or disable hooks to solve a publication
    rejection. Move accidental output to its proper local directory. If a genuinely
    new public top-level component is needed, review its purpose and update the

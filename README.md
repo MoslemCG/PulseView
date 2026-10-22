@@ -2,6 +2,25 @@
 
 **Your performance workspace, arranged your way.**
 
+## Download for Windows — v1.1.0
+
+**[Download PulseView Setup for Windows 11 x64](https://github.com/MoslemCG/PulseView/releases/latest/download/PulseView-Setup-x64.exe)**
+
+You do **not** need to build the project, install developer tools or know how
+GitHub works. Click the link above, open the downloaded file, follow Setup and
+launch **PulseView** from the Start menu. Setup includes the C++ runtime files
+and installs Microsoft WebView2 if needed (that step requires Internet access).
+
+Prefer no installer? [Download the portable ZIP](https://github.com/MoslemCG/PulseView/releases/latest/download/PulseView-Portable-x64.zip),
+extract it, open the PulseView folder and run **PulseView.exe**. Keep the ui folder
+and DLLs together. Do not download Source code archives unless you want to develop
+the app. [All versions and release notes](https://github.com/MoslemCG/PulseView/releases).
+
+The current version is **1.1.0**; check it in the app footer or **Help > About
+PulseView**. The installer is currently unsigned.
+
+![About PulseView displaying the current version](docs/screenshots/readme/about.png)
+
 A compact **Windows 11 x64** desktop monitor with independently splittable panes,
 vivid history charts and reusable layouts. Built with C++20, Win32 and WebView2,
 with a local HTML/CSS/JavaScript interface.
@@ -131,8 +150,8 @@ still require Windows acceptance testing.
 
 ## Build & run
 
-This repository distributes **source**. A signed installer and automatic updates
-are outside the current scope.
+This section is for developers building from source. For normal use, download
+Setup or the portable ZIP above. Automatic in-app updates are not implemented.
 
 | Requirement | Version / component |
 |---|---|

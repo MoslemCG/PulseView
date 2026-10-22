@@ -32,6 +32,7 @@ badge, including charts-only mode.
 | `vram-only.png` | Compact single-pane preset |
 | `skins.gif`, `themes.png` | Eight actual CSS skins and Appearance dialog |
 | `widget-library.png`, `presets.png`, `settings.png` | Feature-specific dialogs |
+| `about.png` | Current version in About PulseView (added for the installer release) |
 
 GIFs encode screenshots of real UI states. They are demonstrations, not native
 telemetry recordings or benchmark evidence. Desktop captures made during preparation

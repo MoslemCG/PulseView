@@ -2,18 +2,19 @@
   "project": "PulseView",
   "version": "1.1.0-source",
   "date": "2026-10-22",
-  "delivery": "Public source snapshot with English feature guide and labeled synthetic Demo media. Native Windows acceptance remains pending.",
+  "delivery": "PulseView 1.1.0 binary distribution: Setup, portable ZIP, visible About/footer version; full hardware acceptance remains pending.",
   "validation": {
     "javascriptUnitTests": 71,
     "baselineBrowserAssertions": 26,
-    "revisionBrowserAssertions": 75,
+    "revisionBrowserAssertions": 77,
     "portableCppTests": 1,
     "details": "docs/PUBLICATION.md; older delivery evidence preserved in docs/TEST_REPORT.md",
     "publicationGuardIntegrationTests": 4,
-    "readmeMediaAssets": 16,
+    "readmeMediaAssets": 17,
     "nativeWindowsScope": "Existing executable observed and limited GPU/split UI interaction; full native acceptance pending.",
     "nativeUiObserved": true,
-    "nativeWindowsAcceptancePassed": false
+    "nativeWindowsAcceptancePassed": false,
+    "nativeCppTests": 2
   },
   "manifestScope": "Reviewed staged Git files, excluding this manifest itself. Local references, credentials, runtime state, build output, dependencies and caches excluded. Hashes describe staged Git blob bytes.",
   "files": [
@@ -39,8 +40,8 @@
     },
     {
       "path": ".github/workflows/windows.yml",
-      "bytes": 1127,
-      "sha256": "3850e434ef8895939e2677ff7a800418f270cf7f12a3209cba18a7bb71f7bda3"
+      "bytes": 2932,
+      "sha256": "bea2058c7d2baa1bfb807d0e231bf2f61b0de51fd967b11f4ef22783ae955b54"
     },
     {
       "path": ".gitignore",
@@ -59,13 +60,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2561,
-      "sha256": "21f8634c0024ab9b3e680912a592830215320643798d1248ec3470054d4e07e9"
+      "bytes": 3129,
+      "sha256": "a9fc9a3f102c7598334ff726153697c7323623c71353558bfd377827eda2b861"
     },
     {
       "path": "CMakeLists.txt",
-      "bytes": 3143,
-      "sha256": "9b06e2dcc57fc5e8bf2938d998a175a4a9b1a72a6e02f309347b4f3c9210230c"
+      "bytes": 3869,
+      "sha256": "e8a2fa3a95ab6198537b13b856b39fd0cb06cd83d2d811519623c9e042639653"
     },
     {
       "path": "CMakePresets.json",
@@ -79,13 +80,13 @@
     },
     {
       "path": "README.fa.md",
-      "bytes": 16867,
-      "sha256": "e04fbd124194fd49c34d2420b8d0ab20ecfbf7a9dbc910443886308ea69f76f2"
+      "bytes": 17936,
+      "sha256": "6b20dd4f23181a5bc441b950e02b0d654bc717cf037170f59c8d80446cc489ac"
     },
     {
       "path": "README.md",
-      "bytes": 11046,
-      "sha256": "3db1407dd66e37c5a8deeeb608828ff0a5581130b33a3ac496a13551131034c7"
+      "bytes": 12199,
+      "sha256": "52aeb1ee29375b6ad7ab85e5b91b3fa9bc8f8f3bacf7ffd9a8d9056c0eb79d8f"
     },
     {
       "path": "SECURITY.md",
@@ -94,13 +95,13 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2922,
-      "sha256": "09b3233e1c6b01f378ec3889adbda03cce107e1d54ae77575abbeb335f96d23d"
+      "bytes": 3015,
+      "sha256": "652bcfc5e5f0059528f5c839e723ae32dd5fb8e57cd7c0f0ca1e0e2350abd0c3"
     },
     {
       "path": "agent.md",
-      "bytes": 17630,
-      "sha256": "902924a39cb3c00f6311fbada67fd11481fdfaea8f519d7bd7361651a242402a"
+      "bytes": 18271,
+      "sha256": "872a5deb447e61942951281788209a32fd4c0bbf035ca1b1bdcd3d3fac4b61a6"
     },
     {
       "path": "build.cmd",
@@ -119,18 +120,18 @@
     },
     {
       "path": "docs/BUILDING.md",
-      "bytes": 4233,
-      "sha256": "a68b1190e2c37a4ff113b9cacd405cfc189fe9b2cb10991db040e3cfbff0398a"
+      "bytes": 4949,
+      "sha256": "5de02b942108420468de1e35499009fe64a01a5407dff1cd0b4bb2eb0cf94dc4"
     },
     {
       "path": "docs/FILE_POLICY.md",
-      "bytes": 4348,
-      "sha256": "ed3b99835e2f46d0a6f7de87af4695f37edea040713e41137c45e8a6f5c91782"
+      "bytes": 4588,
+      "sha256": "f0a84da2f9f9c07e8450c96d5b5c70ed410f070921554c8670fc1170d05201c1"
     },
     {
       "path": "docs/MEDIA.md",
-      "bytes": 2552,
-      "sha256": "ab211b32fd0d7754e202eeb4a3fd3ab643f352984cd71e9e400b6b1b8851fc61"
+      "bytes": 2639,
+      "sha256": "1d0812f1ef54a91800caee2ce7b255b3e18dc11ef50b6db5f1b7ad83d511cf8f"
     },
     {
       "path": "docs/METRICS.md",
@@ -153,14 +154,19 @@
       "sha256": "3fa39cb6430d6ea9832f12a5c8c5722338ee4ca535965446e4c3d386516f7d7a"
     },
     {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 1201,
+      "sha256": "a04f48a3bdd9c0f36c3f040eaf5f187d8806261799aeec6ac3122333297db468"
+    },
+    {
       "path": "docs/SOURCES.md",
       "bytes": 4182,
       "sha256": "03a9e8a026c99cac36af960cfe1f053ebbc6f9ea5bb3532c5f63d7bb8f214181"
     },
     {
       "path": "docs/TEST_REPORT.md",
-      "bytes": 10717,
-      "sha256": "3c91d8aeec57a042dfb573ade66008725d2517bcac7313c2aafdd52d6290a855"
+      "bytes": 11677,
+      "sha256": "b50621483b6257d745f009497ef5e60abfba12c6f18264772679661421f3ab6d"
     },
     {
       "path": "docs/THEMES.md",
@@ -169,8 +175,8 @@
     },
     {
       "path": "docs/WINDOWS_ACCEPTANCE.md",
-      "bytes": 7929,
-      "sha256": "c5b92ff2b67bc9622b38d8fbc9352f0a02cd868918e5b09bd37ef45a90a5261f"
+      "bytes": 8330,
+      "sha256": "e6caeeb62c27c62812b19bcef879e08416d3ff07c9ec7530914d9f60143c62c1"
     },
     {
       "path": "docs/browser-test-results.json",
@@ -226,6 +232,11 @@
       "path": "docs/screenshots/presets.png",
       "bytes": 228654,
       "sha256": "ebaed464a28cb2b6c8abcdb5ae4980e5721ee6f42b77af77b9333e40affb70e2"
+    },
+    {
+      "path": "docs/screenshots/readme/about.png",
+      "bytes": 302795,
+      "sha256": "a5652ec6bbe98fade5d4b81cc74ebf4d26c0c0091ec11b0335e48c6360f18f00"
     },
     {
       "path": "docs/screenshots/readme/charts-only.gif",
@@ -379,8 +390,8 @@
     },
     {
       "path": "native/Application.cpp",
-      "bytes": 20609,
-      "sha256": "e5f0a322ae5467d3957ada76e1142eddd236c772234519843c9912704433c2cd"
+      "bytes": 20640,
+      "sha256": "4a8d094c2f1c883357a6d70344ad76711378c2fa4b862aa194937bb03c03e7ea"
     },
     {
       "path": "native/Application.h",
@@ -438,6 +449,11 @@
       "sha256": "3503a0ce26b77c1a54a39862b836724d67ad073368809a4d8ff2e236e3523e3a"
     },
     {
+      "path": "native/Version.h.in",
+      "bytes": 165,
+      "sha256": "eb201265e987a2cc801760e981858df250d91201a72c7b8043f1a9a9adabb345"
+    },
+    {
       "path": "native/WebViewHost.cpp",
       "bytes": 10936,
       "sha256": "09f9b5fbce7c1b4ea5cb7decdb0192c71930449206e9e384e095b544ec4fe77e"
@@ -469,8 +485,8 @@
     },
     {
       "path": "native/app.rc",
-      "bytes": 579,
-      "sha256": "a89b7aca4e8a4317f1db9e3adf2a4f17a30083483f7e99dd97c36a9d71d0c698"
+      "bytes": 658,
+      "sha256": "4f667caabae27243f1fbedc47618987da131ff9a3ee10b5d0e7708dc29f83dcf"
     },
     {
       "path": "native/main.cpp",
@@ -481,6 +497,11 @@
       "path": "package.json",
       "bytes": 524,
       "sha256": "73b049a7df7061846112873c7c2190c9b0233dfd1a09d7be9e877c1fd40b4ea9"
+    },
+    {
+      "path": "scripts/build-installer.ps1",
+      "bytes": 1789,
+      "sha256": "138baa89ef34f4571c7166d2fc506102faaf615b14a1834930dc54b0df150e4f"
     },
     {
       "path": "scripts/build.ps1",
@@ -494,8 +515,8 @@
     },
     {
       "path": "scripts/capture-readme.py",
-      "bytes": 9527,
-      "sha256": "beadd63c57667521f4656a52b161419514af6c3fdefd6a1113459212ed534d6f"
+      "bytes": 9626,
+      "sha256": "5f15a66bd83404f69a4a3f778ab4d43ff52943a9f94bafeeffeb15baae5c1d97"
     },
     {
       "path": "scripts/check-publication.mjs",
@@ -504,13 +525,18 @@
     },
     {
       "path": "scripts/check.mjs",
-      "bytes": 443,
-      "sha256": "145c46e43a46a4ac930a5e120ef6e358c99227b2b77a2c8060cddf024fc1a0e4"
+      "bytes": 551,
+      "sha256": "a133a6eaf87f309ceb8f7ed92d40169ce52315962c1ba4b6163831b5cb73a749"
+    },
+    {
+      "path": "scripts/installer/PulseView.iss",
+      "bytes": 2761,
+      "sha256": "fe2c2ca6efc7abecc796088c648c82e59c730fce06c214af337a4717c024ff5e"
     },
     {
       "path": "scripts/package.ps1",
-      "bytes": 797,
-      "sha256": "cc19183ec16dd3037a7dd339eca4a7166caec4a050ffa56de4c1e17cc35aa71b"
+      "bytes": 2318,
+      "sha256": "b2b9b525cdd6d60617056e2ce0a79bcabb137bdb57796b52b42570c25d26ccb0"
     },
     {
       "path": "scripts/preview.py",
@@ -536,6 +562,16 @@
       "path": "scripts/sync-metrics.mjs",
       "bytes": 401,
       "sha256": "a0190448e1548d8aca76f45038fa11ccde381e842c4b56e2c8bf8c86285a6148"
+    },
+    {
+      "path": "scripts/sync-version.mjs",
+      "bytes": 696,
+      "sha256": "9e3324b1c3d71723640c7c12dc01cc6ec20c822e0e45f3f158f54e0bfb8d435d"
+    },
+    {
+      "path": "scripts/test-installer.ps1",
+      "bytes": 2066,
+      "sha256": "24b62d347fbb60c1d237371a3991d7ac24613b2218a978c3e30f16adab27b996"
     },
     {
       "path": "tests/browser_support.py",
@@ -564,8 +600,8 @@
     },
     {
       "path": "tests/revision_browser_test.py",
-      "bytes": 21441,
-      "sha256": "940bcef4b778316cd5ffbaf74e35ec20fd3c8642418e401ac5f01f69501bd0ff"
+      "bytes": 21908,
+      "sha256": "921dfbd3ab2a96e0d3a8470cc42076e44e29f64ee764b5b3634907911e4e8ff3"
     },
     {
       "path": "tests/storage_validation_tests.cpp",
@@ -584,8 +620,8 @@
     },
     {
       "path": "ui/app.js",
-      "bytes": 62803,
-      "sha256": "8b95a5657d7e643dc3c074489de3d11aaa4cd3aa170ed760d2c96117ab00c9a0"
+      "bytes": 63057,
+      "sha256": "4c524daa99e416742c214a497a4fddf3844ca76d99da4cdfc68a8417b5f6c996"
     },
     {
       "path": "ui/assets/logo.svg",
@@ -648,14 +684,19 @@
       "sha256": "b4f455ba16c7c3b69606955c1701978a399e039a9bc3f42c4fc12ae747c5c2b1"
     },
     {
+      "path": "ui/core/version.js",
+      "bytes": 96,
+      "sha256": "174761006abf1f4521567e0329ca8bc6a63c03f05785da6865b7b0e921c2cef5"
+    },
+    {
       "path": "ui/core/widgets.js",
       "bytes": 13648,
       "sha256": "6c7f22093ffef3a2bf922b64f7970b85544a09b11730cf638149d65f981afc9e"
     },
     {
       "path": "ui/index.html",
-      "bytes": 5275,
-      "sha256": "8239c4a3d2aa797612c81431dadfed2d98b1828208bf87b7c371738be8b897cb"
+      "bytes": 5343,
+      "sha256": "b615b43ac3816c577bc874ab8e8b0338bf6394c39972542dcafc6d3dd72b17b4"
     },
     {
       "path": "ui/themes/amethyst.css",

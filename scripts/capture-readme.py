@@ -128,6 +128,7 @@ def main():
             page.locator('#add-button').click(); shot('widget-library.png'); page.keyboard.press('Escape')
             page.evaluate('window.__pulseview.showPresets()'); shot('presets.png'); page.keyboard.press('Escape')
             page.locator('#settings-button').click(); shot('settings.png'); page.keyboard.press('Escape')
+            page.locator('#help-button').click(); shot('about.png'); page.keyboard.press('Escape')
 
             fresh('builtin-gpu', 1100, 650)
             shot('gpu-work.png')

@@ -12,7 +12,7 @@ The application glue, frontend, SVG icons, generated pulse app icon, tests and p
 |---|---|
 | Microsoft.Web.WebView2 SDK 1.0.3537.50 | Headers/static loader downloaded during configure or supplied offline. Governed by the package's Microsoft license. Preserve the original license files. |
 | Microsoft Edge WebView2 Evergreen Runtime | Separately installed runtime. Governed by Microsoft distribution terms; not silently installed or bundled here. |
-| Microsoft Visual C++ runtime | Runtime prerequisite for the MSVC build; distribute/install under Microsoft's terms. |
+| Microsoft Visual C++ runtime | App-local runtime DLLs are staged by CMake from the compiler's redistributable directory under Microsoft's redistribution terms. They are not covered by PulseView's MIT license. |
 | nlohmann/json 3.12.0 | MIT-licensed C++ header downloaded during configure. Its copyright/license must accompany distributions containing the library. CMake downloads its LICENSE.MIT for online builds. |
 | NVIDIA NVML | Optional dynamically loaded driver-provided DLL. No NVML binary, driver or SDK header is included. The source contains minimal original read-only ABI declarations. NVIDIA's terms apply to its installed components. |
 

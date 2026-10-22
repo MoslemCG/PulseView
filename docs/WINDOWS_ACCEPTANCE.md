@@ -1,5 +1,11 @@
 # Windows acceptance checklist — not yet executed
 
+22 October 2026 update: the documented VS2022 Release preset, both native CTest
+cases and packaging passed on GitHub run 39824960646. The version-display change
+also passed a fresh local MSVC Release build, both native tests and portable CTest.
+These are build/unit results only. All unchecked real-machine acceptance items
+below remain pending; do not infer GPU, DPI or overlay correctness from CI.
+
 **Initial delivery status:** the Windows host has not been compiled or run in this environment. Every checkbox below is pending. Source inspection, the Linux portable C++ test, Chromium UI tests and a CI workflow do not count as these tests passing. Record Windows build/runtime/driver versions and actual observations as you complete them.
 
 ## Build and packaging

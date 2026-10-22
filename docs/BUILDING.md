@@ -72,7 +72,24 @@ Keep the upstream dependency licenses for redistribution. Do not disable TLS ver
 .\scripts\package.ps1 -Configuration Release
 ```
 
-Output: `out/PulseView-Windows-x64.zip`. This contains the executable and local UI assets, not the source project. End users need the WebView2 Evergreen x64 Runtime and Microsoft Visual C++ x64 runtime required by the MSVC build. The project does not silently install prerequisites. Signing, a branded installer, auto-update and Store/MSIX distribution are outside this source delivery.
+Output: `out/PulseView-Portable-x64.zip`, containing the executable, local UI and
+app-local Microsoft C++ runtime DLLs. WebView2 Evergreen x64 Runtime is required.
+To build Setup, install Inno Setup 6 and run `scripts/build-installer.ps1` after
+packaging. It downloads Microsoft's signed WebView2 bootstrapper over HTTPS and
+produces `out/PulseView-Setup-x64.exe` plus `out/SHA256SUMS.txt`. Setup installs
+WebView2 only when missing. Code signing and automatic app updates are not included.
+
+## Versions and releases
+
+`package.json` is the version authority. After changing it, run
+`node scripts/sync-version.mjs` and commit `ui/core/version.js`. CMake reads the
+same version to generate the native resource/header. CI checks synchronization
+and rejects release tags that do not match `v<package-version>`.
+
+Pushing a matching version tag runs the Windows build, native tests, packaging
+and isolated installer install/uninstall smoke on Windows Server 2025, then
+publishes Setup, portable ZIP and SHA256 checksums as GitHub Release assets.
+Installer smoke never runs on a developer's real installation.
 
 The included GitHub Actions workflow performs a Windows compile and unit tests after you push the project to a repository. It has not been run as part of this delivery and is not a substitute for testing on real GPU hardware.
 

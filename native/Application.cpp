@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "Version.h"
 #include <windowsx.h>
 #include <dwmapi.h>
 #include <shobjidl.h>
@@ -179,7 +180,7 @@ Json Application::Dispatch(const std::string&m,const Json&p){
  if(m=="themes.list")return storage_.Themes();
  if(m=="themes.install")return storage_.InstallTheme(p);
  if(m=="app.openFolder"){auto dir=storage_.Folder(p.value("folder",std::string("data")));const auto r=ShellExecuteW(hwnd_,L"open",dir.c_str(),nullptr,nullptr,SW_SHOWNORMAL);if(reinterpret_cast<INT_PTR>(r)<=32)throw std::runtime_error("Could not open the data folder.");return Json::object();}
- if(m=="app.diagnostics")return{{"mode","Native Windows telemetry"},{"version","1.1.0"},{"webView2Runtime",web_.RuntimeVersion()},{"dataPath",Utf8(storage_.Root().wstring())},{"capabilities",Capabilities()},{"collector",telemetry_.Diagnostics()},{"settings",settings_}};
+ if(m=="app.diagnostics")return{{"mode","Native Windows telemetry"},{"version",PULSEVIEW_VERSION},{"webView2Runtime",web_.RuntimeVersion()},{"dataPath",Utf8(storage_.Root().wstring())},{"capabilities",Capabilities()},{"collector",telemetry_.Diagnostics()},{"settings",settings_}};
  throw std::runtime_error("Unknown RPC method: "+m);
 }
 Json Application::ExportPreset(const Json&p){

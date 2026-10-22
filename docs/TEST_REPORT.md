@@ -1,5 +1,21 @@
 # Test report — PulseView 1.1.0 source delivery, 26 September 2026
 
+## Version display and binary distribution — 22 October 2026
+
+The native Release executable was freshly compiled locally with MSVC 19.42 from
+the shared package.json version. Both native CTest cases (telemetry math and
+storage validation) passed; portable CTest also passed. JavaScript checks and all
+71 Node tests passed. Baseline browser suite passed 26 checks; revision suite
+passed 77 checks, including footer and About version visibility. About was
+captured and visually checked from the actual preview frontend. Packaging verified
+the executable ProductVersion and staged app-local C++ runtime files.
+
+The previous GitHub run 39824960646 independently passed its Windows build,
+71 Node tests, both native tests and package upload. New Setup installation and
+uninstallation are gated by the isolated Windows Server 2025 CI smoke; see its
+actual run result before claiming that gate passed. Real GPU accuracy, DPI and
+overlay acceptance remain pending.
+
 ## Public-source preparation rerun — 22 October 2026
 
 README publication follow-up: the real frontend was served over loopback with its

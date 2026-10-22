@@ -1,5 +1,15 @@
 # PulseView source changelog
 
+## 1.1.0 distribution — 22 October 2026
+
+- Added public Windows Setup and portable ZIP packaging, app-local C++ runtime,
+  and conditional Microsoft WebView2 bootstrapper installation.
+- Added version display to the footer and About PulseView, with package.json as
+  the shared authority for frontend, native executable properties and installer.
+- Added direct download instructions at the top of both READMEs.
+- Matching version tags publish a GitHub Release only after native build/tests
+  and an isolated install/uninstall and user-data preservation smoke test.
+
 ## 1.1.0 — 26 September 2026
 
 ### Implemented in code
