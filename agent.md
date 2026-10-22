@@ -1,9 +1,11 @@
 # PulseView — mandatory handoff for coding agents
 
-Distribution update (22 October 2026): current version is 1.1.0, defined by
+Distribution update (22 October 2026): current version is 1.1.1, defined by
 `package.json`. Run `node scripts/sync-version.mjs` after a version change;
 `ui/core/version.js` is intentionally committed for builds without Node. CMake
 generates the native version/header from the same value. Footer and About show it.
+The footer has a labeled About/version button; every pane's context menu has a
+versioned About action, also available in Charts-only mode. There is no Help menu.
 The tag workflow builds an unsigned per-user Setup and portable ZIP, runs isolated
 installer smoke tests, then publishes GitHub Release assets. Build/dependency and
 hardware acceptance limits below remain in effect; historical source-only delivery
@@ -13,6 +15,19 @@ File ownership and publication: follow `docs/FILE_POLICY.md` for every new file
 and tool. New permanent source/tests belong in Git; generated output and one-off
 experiments belong under ignored `out/`, private inputs under `.local/`. Enable
 the tracked publication hooks with `npm run setup:git` in each clone.
+
+Mandatory release parity: the owner's normal executable is
+`out/build/ninja-release/bin/PulseView.exe`. Every delivered release must use the
+same published GitHub portable artifact at that path, not a separately compiled
+local binary. After release CI passes, close the app normally, run
+`scripts/sync-local-release.ps1`, reopen that executable and verify the footer and
+About version in the actual Windows app. The script checks the published ZIP's
+SHA256, backs up the old runtime, preserves AppData and compares every installed
+distribution file byte-for-byte. `-VerifyOnly` checks an existing installation.
+A later local build overwrites release parity: rerun the sync before handing the
+app back to the owner. Do not claim delivery complete while parity is unverified.
+Keep the public README brief; feature details and engineering instructions belong
+in the linked guides, not long marketing or explanatory prose.
 
 Public-source packaging note: the original `docs/design/reference.png` and
 `chart-target.png` are retained locally but excluded from Git because public

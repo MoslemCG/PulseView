@@ -98,4 +98,39 @@ GPU correctness, DPI and overlay behavior on real hardware.
 
 ## Frontend preview and tests
 
-See [README.md](../README.md#development) for development commands. Preview telemetry is synthetic; native telemetry is never replaced by it. Browser capture tooling additionally uses Python Pillow.
+```powershell
+npm run setup:git
+npm run check
+npm test
+python scripts/preview.py
+```
+
+Browser regressions require TypeScript, Python Playwright and Chromium:
+
+```powershell
+npm install --no-save typescript
+python -m pip install playwright pillow
+python -m playwright install chromium
+python tests/browser_test.py
+python tests/revision_browser_test.py
+```
+
+Preview telemetry is synthetic; native telemetry is never replaced by it.
+See [agent.md](../agent.md) for the required checks and [FILE_POLICY.md](FILE_POLICY.md)
+for source/output placement. Capture output stays under ignored `out/`.
+
+## Owner's local release
+
+Use the published portable artifact for the owner's normal
+`out/build/ninja-release/bin/PulseView.exe`. After publishing a matching version
+tag and closing PulseView normally:
+
+```powershell
+.\scripts\sync-local-release.ps1
+```
+
+The script verifies the release ZIP checksum, backs up the old runtime under
+`.local/runtime-backups/`, installs the exact release files and compares their
+hashes. AppData presets and settings are preserved. Reopen the same executable
+and check About in the actual app. `-VerifyOnly` checks parity without replacing
+files. Rebuilding into that directory requires another sync before delivery.

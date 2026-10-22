@@ -27,7 +27,7 @@ If missing, use the Setup edition or obtain WebView2 from:
 https://developer.microsoft.com/microsoft-edge/webview2/
 
 Your presets and settings are stored in %LOCALAPPDATA%\PulseView.
-See the installed version in the footer or Help > About PulseView.
+See the installed version on the About button in the footer or pane right-click menu.
 "@ | Set-Content (Join-Path $destination 'START-HERE.txt') -Encoding utf8
  $zip=Join-Path $root 'out/PulseView-Portable-x64.zip'
  Compress-Archive -Path $destination -DestinationPath $zip -Force

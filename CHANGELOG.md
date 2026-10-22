@@ -1,5 +1,12 @@
 # PulseView source changelog
 
+## 1.1.1 — 22 October 2026
+
+- Made About discoverable with a labeled footer button containing the version.
+- Added versioned About to each pane's context menu, including Charts-only mode.
+- Corrected README directions: there is no separate Help menu.
+- Shortened both READMEs and added verified GitHub-to-local release synchronization.
+
 ## 1.1.0 distribution — 22 October 2026
 
 - Added public Windows Setup and portable ZIP packaging, app-local C++ runtime,

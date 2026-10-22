@@ -374,7 +374,8 @@ function paneMenu(id, x, y) {
         { text: 'Equalize sizes', icon: p?.axis === 'y' ? 'splitY' : 'splitX', disabled: locked || !p, action: () => equalize(id) },
         { text: 'Rotate parent split', icon: 'restore', disabled: locked || !p, action: () => mutate(t => { find(t, p.id).axis = p.axis === 'x' ? 'y' : 'x'; return t; }) },
         { separator: true }, { text: 'Clear widget', icon: 'minus', disabled: locked, action: () => mutate(t => { find(t, id).widget = null; return t; }) },
-        { text: 'Remove cell', icon: 'trash', disabled: locked, action: () => mutate(t => remove(t, id)) }], x, y);
+        { text: 'Remove cell', icon: 'trash', disabled: locked, action: () => mutate(t => remove(t, id)) },
+        { separator: true }, { text: `About PulseView v${APP_VERSION}`, icon: 'keyboard', action: showHelp }], x, y);
 }
 function showModal(title, subtitle, body, footer = '', { floating = false } = {}) {
     closeMenu();

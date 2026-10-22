@@ -57,13 +57,13 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1445,
-      "sha256": "bf04edc8f57c8372db18b45d3c58082f057562314b530def2888a57d31f88b6a"
+      "bytes": 1674,
+      "sha256": "0e7094617423f0f3dd7ac95b80becc15fd0dd6be14b5e1670d67739f63879510"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3129,
-      "sha256": "a9fc9a3f102c7598334ff726153697c7323623c71353558bfd377827eda2b861"
+      "bytes": 3468,
+      "sha256": "ece46ba2416115fc1d0fd2c07df5364604e0f21093b619d49a54bdf309d66b44"
     },
     {
       "path": "CMakeLists.txt",
@@ -82,13 +82,13 @@
     },
     {
       "path": "README.fa.md",
-      "bytes": 17837,
-      "sha256": "d2093d63c6bee1e66aa0f206bf1ca190a45742b0125be2dc149dcde415548cc9"
+      "bytes": 2130,
+      "sha256": "6f99ffccaafc323fab161d9f9ba1d8e9f114c68d6bdabb45a81245fcf87c86ea"
     },
     {
       "path": "README.md",
-      "bytes": 12199,
-      "sha256": "52aeb1ee29375b6ad7ab85e5b91b3fa9bc8f8f3bacf7ffd9a8d9056c0eb79d8f"
+      "bytes": 2402,
+      "sha256": "7a4de1d78fa55a1f14b8da3a6b599c611f93bbad2799b97a5c3f9da3159688cc"
     },
     {
       "path": "SECURITY.md",
@@ -102,8 +102,8 @@
     },
     {
       "path": "agent.md",
-      "bytes": 18271,
-      "sha256": "872a5deb447e61942951281788209a32fd4c0bbf035ca1b1bdcd3d3fac4b61a6"
+      "bytes": 19353,
+      "sha256": "23352ed6c838a6458a460f6604ae6a143bf1d7d28c220f21906f205c10f9e2b7"
     },
     {
       "path": "build.cmd",
@@ -122,8 +122,8 @@
     },
     {
       "path": "docs/BUILDING.md",
-      "bytes": 4938,
-      "sha256": "1f7b71d9818fda5491449e581b7b8e4f2d292b54d034ea6ad561ce949d7fae4d"
+      "bytes": 5979,
+      "sha256": "3d726db0f9457cf9fe758e88c9cffbc0c4095b8fe2a461389519a520cfd5f4a1"
     },
     {
       "path": "docs/FILE_POLICY.md",
@@ -157,8 +157,8 @@
     },
     {
       "path": "docs/RELEASE_NOTES.md",
-      "bytes": 1201,
-      "sha256": "a04f48a3bdd9c0f36c3f040eaf5f187d8806261799aeec6ac3122333297db468"
+      "bytes": 592,
+      "sha256": "fe9aa0035166d6e298f7fba2e5ee19810903cf78f34f5bd2c77d54918005f0e2"
     },
     {
       "path": "docs/SOURCES.md",
@@ -167,8 +167,8 @@
     },
     {
       "path": "docs/TEST_REPORT.md",
-      "bytes": 12197,
-      "sha256": "0429c744a48fb1ae48c1c37fb28256d7f2be7622816d23bf4024b9773c0ede9e"
+      "bytes": 12954,
+      "sha256": "f2ed04c14a4704d627ff0406c372849d6daba460eeb6352b1b9c27de7471308b"
     },
     {
       "path": "docs/THEMES.md",
@@ -237,88 +237,88 @@
     },
     {
       "path": "docs/screenshots/readme/about.png",
-      "bytes": 302795,
-      "sha256": "a5652ec6bbe98fade5d4b81cc74ebf4d26c0c0091ec11b0335e48c6360f18f00"
+      "bytes": 303414,
+      "sha256": "de71972c671e6a2424102b003ad826ff85b72ff71898545644e954c223bcef5f"
     },
     {
       "path": "docs/screenshots/readme/charts-only.gif",
-      "bytes": 479441,
-      "sha256": "3e51449ce77138a711fba4361e3f6647042ca41b6e795ecb9c87dd7d06e96370"
+      "bytes": 480615,
+      "sha256": "caf0fb0d869730ea3fc5027d9e7c1650f03a855b3b969694c165e26783438c70"
     },
     {
       "path": "docs/screenshots/readme/charts-only.png",
-      "bytes": 334685,
-      "sha256": "bd72a747c771a9749731d74ec36b1c0dcb748fb63a0fefc6af96cb753cdc7356"
+      "bytes": 334786,
+      "sha256": "41fb7cfd1bbb53e0e87c006ebc32fc8218fdd6deb2bcced4d84e9a4bcdbfd3f3"
     },
     {
       "path": "docs/screenshots/readme/cpu-cores.png",
-      "bytes": 361875,
-      "sha256": "b4da299266cced008b4861ea83fb3c7d260fbc2a8cd9090eaf4065348997a873"
+      "bytes": 362867,
+      "sha256": "46a08185c667edd3c0e632884d9752cdb450ba3f5a497e7d3bbbe11740a0817c"
     },
     {
       "path": "docs/screenshots/readme/gpu-work.png",
-      "bytes": 298062,
-      "sha256": "4760a291a719cbc93374bc8a3a3e6f628dc21229ffc38c0928503c32bce7fee8"
+      "bytes": 299042,
+      "sha256": "c12442b738090de1880a815be8ae73c929bc61ab06817eee0b4964081de59fe8"
     },
     {
       "path": "docs/screenshots/readme/live-workload.gif",
-      "bytes": 389929,
-      "sha256": "794a69a6197057f0885b34b628c4946bf5b1619f7faba560a1e995e82a5f99e1"
+      "bytes": 391308,
+      "sha256": "ff039e863c4efde804b9b1a36c32bc34bc8b7ff87e4e71a19a112dbbaa70c420"
     },
     {
       "path": "docs/screenshots/readme/network.png",
-      "bytes": 270041,
-      "sha256": "4ae202c20a021e62113214261be403beb542d1428edd7a8dfc05fb83d17b2236"
+      "bytes": 271096,
+      "sha256": "225ab6a072c28ffa0c44fcef4852d46b2684e35e0eddc621e2657982c75c4488"
     },
     {
       "path": "docs/screenshots/readme/overview.png",
-      "bytes": 646442,
-      "sha256": "4ce8f65fed118712939100b45998343423fcf7d0e81eaadee6bcb2d2cd8b4796"
+      "bytes": 647442,
+      "sha256": "ca7c7cdb0913a059716b8b0b237901af5ae0031565444518efcf897277fb1224"
     },
     {
       "path": "docs/screenshots/readme/presets.png",
-      "bytes": 293358,
-      "sha256": "41eea75e287d00a7b621e784ffa51e019424e40cab5206dc923a65959892ab0e"
+      "bytes": 294449,
+      "sha256": "709a657b132c06731d8364aa62892df5b87249d3c5f1a9de2566c3931ecb6ee2"
     },
     {
       "path": "docs/screenshots/readme/recursive-splits.gif",
-      "bytes": 551069,
-      "sha256": "77c0f648fdb84213907ddc1f0ed7a07ab38b8f910c6b577c7ebd3c3cbd5e8647"
+      "bytes": 551924,
+      "sha256": "882e591a132aa185dcd49f3e68eda8e66848f511b449a927b10f9a16e7178c42"
     },
     {
       "path": "docs/screenshots/readme/sample-hover.png",
-      "bytes": 300015,
-      "sha256": "91b6d5f3cdc5f987423f6f08c2d406fc54d36029d2016a862b518885bd41d492"
+      "bytes": 301003,
+      "sha256": "1c6492e3353712ff6af6c6dc3d7c5ca664dfd144773109694db187e8c9b87955"
     },
     {
       "path": "docs/screenshots/readme/settings.png",
-      "bytes": 280947,
-      "sha256": "06d498631055afee8c7b0ec4f8c95f48470b5a908085087f0c9c0a5adb5404a2"
+      "bytes": 282003,
+      "sha256": "de60bbdbbdde32f802a6575299e47ac319038923b677e56cb3cc4e994400ebe1"
     },
     {
       "path": "docs/screenshots/readme/skins.gif",
-      "bytes": 1178001,
-      "sha256": "00bfcc13cee727247b5b47c1f0bf54a76d7eece26ddcb4b5d8b3d48f5516d354"
+      "bytes": 1179432,
+      "sha256": "9581e7881a1fa9dd0b83b2a68f80b70cb47251991eb2eed639f46b9ea022d68f"
     },
     {
       "path": "docs/screenshots/readme/themes.png",
-      "bytes": 260044,
-      "sha256": "230aebf9e9d453a25ca44b10f26729f1c7540ee9b888a4af58a19d92ce0eef8b"
+      "bytes": 261100,
+      "sha256": "0d636d83f8fe1d177a530090b494909ceba6f936fa493c8052f30e01555da364"
     },
     {
       "path": "docs/screenshots/readme/time-compression.png",
-      "bytes": 334894,
-      "sha256": "beeb8c878e4b0d31dc362586460b8c62437f85717fcde6a90aca796150a370a0"
+      "bytes": 335936,
+      "sha256": "b899ec187a1c8a128b3f5412753b96cb0deaa63458e0e4b9085c328c4810fcbf"
     },
     {
       "path": "docs/screenshots/readme/vram-only.png",
-      "bytes": 78407,
-      "sha256": "3bbbe08cf0461650f0900845b01720d892f02222605266e84081016cee2fd066"
+      "bytes": 78997,
+      "sha256": "f9ec52f9337ff051137e7cc437659688ae438e2eca15174210d06118ddee62f3"
     },
     {
       "path": "docs/screenshots/readme/widget-library.png",
-      "bytes": 290465,
-      "sha256": "bb2145f63a8f0b3ea196898bd262c92a2ad4b293bd9d591deaa0aa843ac4905a"
+      "bytes": 291517,
+      "sha256": "6618848f32aea8ff4e79f66269ead1aa981c71a12473bf1bbea7066621c50802"
     },
     {
       "path": "docs/screenshots/skin-amethyst.png",
@@ -498,7 +498,7 @@
     {
       "path": "package.json",
       "bytes": 524,
-      "sha256": "73b049a7df7061846112873c7c2190c9b0233dfd1a09d7be9e877c1fd40b4ea9"
+      "sha256": "7b3391555bc2a86aafa884cb8e1811eb487558d11642b759b3dfcff6dfa89713"
     },
     {
       "path": "scripts/build-installer.ps1",
@@ -517,8 +517,8 @@
     },
     {
       "path": "scripts/capture-readme.py",
-      "bytes": 9626,
-      "sha256": "5f15a66bd83404f69a4a3f778ab4d43ff52943a9f94bafeeffeb15baae5c1d97"
+      "bytes": 9627,
+      "sha256": "1d6146f02eed27ba5f46d9a2256a4f9cc409d34abbaa722ba24b60dac1b6ba79"
     },
     {
       "path": "scripts/check-publication.mjs",
@@ -537,8 +537,8 @@
     },
     {
       "path": "scripts/package.ps1",
-      "bytes": 2318,
-      "sha256": "b2b9b525cdd6d60617056e2ce0a79bcabb137bdb57796b52b42570c25d26ccb0"
+      "bytes": 2337,
+      "sha256": "d3bf815a1a62580ff2cc8e3c2edfd74d44c34b39ae0a456dfc165b3f6c62b296"
     },
     {
       "path": "scripts/preview.py",
@@ -559,6 +559,11 @@
       "path": "scripts/source-manifest.py",
       "bytes": 2419,
       "sha256": "d4843fc2c313b9a411be51867909204e0fb7ac6ecbbd57580a62557ccdec1cac"
+    },
+    {
+      "path": "scripts/sync-local-release.ps1",
+      "bytes": 4751,
+      "sha256": "c1de1bc822d6337e7a8a84255c79491fe81ab14105b7db217550a8ecf0e0d04c"
     },
     {
       "path": "scripts/sync-metrics.mjs",
@@ -602,8 +607,8 @@
     },
     {
       "path": "tests/revision_browser_test.py",
-      "bytes": 21908,
-      "sha256": "921dfbd3ab2a96e0d3a8470cc42076e44e29f64ee764b5b3634907911e4e8ff3"
+      "bytes": 22895,
+      "sha256": "c0b53cf4c3356126346507eccca43b9216af7d70d6c60f552f23eb564b657345"
     },
     {
       "path": "tests/storage_validation_tests.cpp",
@@ -617,13 +622,13 @@
     },
     {
       "path": "ui/app.css",
-      "bytes": 26996,
-      "sha256": "85fff09d0b709b7e8f64f9bfcfa01ce200e1c9d3718e2043d0583662e61a8d3b"
+      "bytes": 27282,
+      "sha256": "e5dc6a03bac385086aceb36a70ecfdc42afb90be7c330b9057d0e9f4e3e0bf33"
     },
     {
       "path": "ui/app.js",
-      "bytes": 63057,
-      "sha256": "4c524daa99e416742c214a497a4fddf3844ca76d99da4cdfc68a8417b5f6c996"
+      "bytes": 63167,
+      "sha256": "cd9450605e5d258db40e0694b0b18a1046c3a75e3a710f4239b82e0d49d9f3fe"
     },
     {
       "path": "ui/assets/logo.svg",
@@ -688,7 +693,7 @@
     {
       "path": "ui/core/version.js",
       "bytes": 96,
-      "sha256": "174761006abf1f4521567e0329ca8bc6a63c03f05785da6865b7b0e921c2cef5"
+      "sha256": "574e7b41d9be6a5507bb5ea4c844f8eda0403f7818f23d596978c9da5fcaf212"
     },
     {
       "path": "ui/core/widgets.js",
@@ -697,8 +702,8 @@
     },
     {
       "path": "ui/index.html",
-      "bytes": 5343,
-      "sha256": "b615b43ac3816c577bc874ab8e8b0338bf6394c39972542dcafc6d3dd72b17b4"
+      "bytes": 5360,
+      "sha256": "969a45706db98d4a6a55e3070737352234feca4fe772aa02afae2e14288235e9"
     },
     {
       "path": "ui/themes/amethyst.css",

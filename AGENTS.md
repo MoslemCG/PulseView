@@ -1,5 +1,9 @@
 # Agent entry point
 
+Release parity is mandatory: the owner's `out/build/ninja-release/bin/PulseView.exe`
+must use the exact published GitHub portable artifact, verified by
+`scripts/sync-local-release.ps1`. Follow the release handoff in `agent.md`.
+
 Read and follow **[docs/FILE_POLICY.md](docs/FILE_POLICY.md)** before creating
 files. Permanent source/tests/docs go in their owning directories; all disposable
 work and generated output go under `out/`, private inputs under `.local/`.

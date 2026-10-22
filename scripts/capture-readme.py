@@ -68,7 +68,7 @@ SEED = r'''({offset = 0} = {}) => {
   let badge=document.querySelector('#readme-demo-badge');
   if(!badge){badge=document.createElement('div');badge.id='readme-demo-badge';
     badge.textContent='DEMO · SYNTHETIC DATA';
-    badge.style.cssText='position:fixed;bottom:5px;right:12px;z-index:999999;padding:3px 7px;border:1px solid #37516b;border-radius:3px;background:#071321ed;color:#9fb6cd;font:10px Segoe UI,Arial;pointer-events:none';
+    badge.style.cssText='position:fixed;bottom:5px;right:130px;z-index:999999;padding:3px 7px;border:1px solid #37516b;border-radius:3px;background:#071321ed;color:#9fb6cd;font:10px Segoe UI,Arial;pointer-events:none';
     document.body.append(badge);}
   return ['gpu.compute','gpu.vram.used','cpu.usage','net.download'].map(id=>{
     const a=p.store.get(id,120).map(x=>x.v);return {id,min:Math.min(...a),max:Math.max(...a)};

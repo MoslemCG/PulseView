@@ -1,5 +1,18 @@
 # Test report — PulseView 1.1.0 source delivery, 26 September 2026
 
+## Version 1.1.1 regression — 22 October 2026
+
+Local MSVC Release compilation passed, with both native CTest cases and the
+portable CTest case passing. Syntax checks and all 71 Node tests passed. Browser
+regressions passed 26 baseline and 81 revision checks, including readable About,
+version visibility at 390px width and opening About through a Charts-only pane
+menu. These browser assertions do not certify native UI or hardware behavior.
+
+The owner previously ran `out/build/ninja-release/bin/PulseView.exe`, an older
+deployment without the version UI. Release delivery now requires synchronizing
+that path from the published portable artifact with checksum and per-file hash
+verification; see `scripts/sync-local-release.ps1` and the handoff rules.
+
 ## Version display and binary distribution — 22 October 2026
 
 The native Release executable was freshly compiled locally with MSVC 19.42 from

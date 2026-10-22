@@ -781,6 +781,22 @@ kbd {
   width:13px;
   height:13px
 }
+.statusbar .about-button {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  flex:none;
+  padding:0 7px;
+  border:1px solid var(--border);
+  border-radius:3px;
+  color:var(--text);
+  font-size:10px
+}
+#sample-status {
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
 #data-notice {
   color:var(--faint)
 }
