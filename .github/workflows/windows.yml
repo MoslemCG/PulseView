@@ -9,7 +9,7 @@ permissions:
   contents: read
 jobs:
   windows:
-    runs-on: windows-2025
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,9 +50,6 @@ jobs:
       - name: Build Setup and checksums
         shell: pwsh
         run: ./scripts/build-installer.ps1
-      - name: Test install, version and uninstall
-        shell: pwsh
-        run: ./scripts/test-installer.ps1
       - uses: actions/upload-artifact@v4
         with:
           name: PulseView-Windows-x64
@@ -61,9 +58,21 @@ jobs:
             out/PulseView-Setup-x64.exe
             out/SHA256SUMS.txt
           if-no-files-found: error
+  installer-smoke:
+    needs: windows
+    runs-on: windows-2025
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: PulseView-Windows-x64
+          path: out
+      - name: Test install, version and uninstall
+        shell: pwsh
+        run: ./scripts/test-installer.ps1
   release:
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: windows
+    needs: [windows, installer-smoke]
     runs-on: ubuntu-latest
     permissions:
       contents: write
